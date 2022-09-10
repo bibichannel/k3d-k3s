@@ -1,0 +1,9 @@
+apiVersion: metallb.io/v1beta1
+kind: AddressPool
+metadata:
+  namespace: kube-system
+  name: metallb-config
+spec:
+  protocol: layer2
+  addresses:     
+  - 172.20.0.240-172.20.0.250
